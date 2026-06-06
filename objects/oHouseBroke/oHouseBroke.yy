@@ -1,20 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oHouse",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oHouseBroke",
+  "eventList":[],
   "managed":true,
-  "name":"oHouse",
+  "name":"oHouseBroke",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/Enemy.yy",
   },
-  "parentObjectId":{
-    "name":"oHousePar",
-    "path":"objects/oHousePar/oHousePar.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

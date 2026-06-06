@@ -8,13 +8,13 @@ atkDown = keyboard_check_pressed(vk_down)
 atkLeft = keyboard_check_pressed(vk_left)
 atkRight = keyboard_check_pressed(vk_right)
 atkPress = keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down) 
-or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)
+    or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)
 clickPress = mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_space)
 keySprint = keyboard_check(vk_shift)
 
 //Movement calc
 if keySprint{
-    speedLimit = 2.5
+    speedLimit = 3
 }
 else{
     speedLimit = 2

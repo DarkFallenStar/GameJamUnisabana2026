@@ -1,2 +1,2 @@
 path_delete(path)
-oPlayer.money++
+oGame.money++

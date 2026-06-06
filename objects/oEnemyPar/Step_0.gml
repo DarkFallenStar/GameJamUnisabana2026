@@ -1,13 +1,13 @@
 if (alarm[0] >= 0){
-    x += kbx
-    y += kby
+    x += kbx*0.5
+    y += kby*0.5
 }
 if life > 0{
     checkPlayer()
 }
 else{
     if (alarm[0] < 0){
-        instance_create_depth(x,y,0,oEnemyDead)
+        instance_create_layer(x,y,"Dead",oEnemyDead)
         instance_destroy()
     }
 }

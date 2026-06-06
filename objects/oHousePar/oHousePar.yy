@@ -1,20 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"oHouse",
+  "%Name":"oHousePar",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":12,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oHouse",
+  "name":"oHousePar",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/Enemy.yy",
   },
-  "parentObjectId":{
-    "name":"oHousePar",
-    "path":"objects/oHousePar/oHousePar.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sHouse",
-    "path":"sprites/sHouse/sHouse.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
