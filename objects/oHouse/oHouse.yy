@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oEnemy1",
+  "%Name":"oHouse",
   "eventList":[],
   "managed":true,
-  "name":"oEnemy1",
+  "name":"oHouse",
   "overriddenProperties":[],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/Enemy.yy",
   },
-  "parentObjectId":{
-    "name":"oEnemyPar",
-    "path":"objects/oEnemyPar/oEnemyPar.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -30,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sEnemyIdle",
-    "path":"sprites/sEnemyIdle/sEnemyIdle.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
