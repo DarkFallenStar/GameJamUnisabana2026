@@ -1,4 +1,3 @@
-event_inherited()
 alert = false
 path = path_add()
 pathDelay = 30
@@ -6,3 +5,11 @@ pathTimer = irandom(60)
 kbx = 0
 kby = 0
 colTiles = oSolid
+
+enum states{
+    IDLE,
+    MOVE,
+    ATTACK,
+    DEAD,
+}
+state = states.IDLE

@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"oEntityPar",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"oCoin",
+  "eventList":[],
   "managed":true,
-  "name":"oEntityPar",
+  "name":"oCoin",
   "overriddenProperties":[],
   "parent":{
-    "name":"Control",
-    "path":"folders/Objects/Control.yy",
+    "name":"Enemy",
+    "path":"folders/Objects/Enemy.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sCoin",
+    "path":"sprites/sCoin/sCoin.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

@@ -1,4 +1,3 @@
-event_inherited()
 colTiles = oSolid
 xSpeed = 0
 ySpeed = 0

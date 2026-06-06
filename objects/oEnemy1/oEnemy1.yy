@@ -4,7 +4,12 @@
   "eventList":[],
   "managed":true,
   "name":"oEnemy1",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"sIdle","path":"objects/oEnemyPar/oEnemyPar.yy",},"resource":{"name":"sEnemyIdle","path":"sprites/sEnemyIdle/sEnemyIdle.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sEnemyIdle",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"sAttack1","path":"objects/oEnemyPar/oEnemyPar.yy",},"resource":{"name":"sEnemyAttack","path":"sprites/sEnemyAttack/sEnemyAttack.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sEnemyAttack",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"sDead","path":"objects/oEnemyPar/oEnemyPar.yy",},"resource":{"name":"sEnemyDead","path":"sprites/sEnemyDead/sEnemyDead.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sEnemyDead",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"sMove","path":"objects/oEnemyPar/oEnemyPar.yy",},"resource":{"name":"sEnemyChase","path":"sprites/sEnemyChase/sEnemyChase.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"sEnemyChase",},
+  ],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/Enemy.yy",

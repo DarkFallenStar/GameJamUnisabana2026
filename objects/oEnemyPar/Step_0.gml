@@ -27,3 +27,18 @@ if (place_meeting(x, y+kby, colTiles)) {
     }
     kby = 0 
 }
+
+switch (state) {
+	case states.IDLE:
+        sprite_index = sIdle
+    break    
+	case states.MOVE:
+        sprite_index = sMove
+    break    
+	case states.ATTACK:
+        sprite_index = sAttack1
+    break    
+	case states.DEAD:
+        sprite_index = sDead
+    break    
+}

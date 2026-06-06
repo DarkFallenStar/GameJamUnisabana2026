@@ -1,8 +1,9 @@
 function checkPlayer(){
     var dis = distance_to_object(oPlayer)
+
     
     if ((dis <= alert_dis) or (alert)) and dis > atkDis{
-        
+        state = states.IDLE
         alert = true
         
         if pathTimer-- <= 0{
@@ -14,10 +15,19 @@ function checkPlayer(){
                 path_start(path, spd, path_action_stop,false)
             }
         }
+        
+        if (dis > alert_dis){
+            alert = false
+            
+            if alarm[1] < 0{
+                alarm[1] = 60
+            } 
+        }
     }
     else{
         if dis <= atkDis{
             path_end()
+            
         }
     }
 }
