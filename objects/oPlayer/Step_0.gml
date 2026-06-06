@@ -14,10 +14,10 @@ keySprint = keyboard_check(vk_shift)
 
 //Movement calc
 if keySprint{
-    speedLimit = 10
+    speedLimit = 2.5
 }
 else{
-    speedLimit = 6
+    speedLimit = 2
 }
 
 hMoveDir = keyRight-keyLeft
@@ -31,6 +31,10 @@ ySpeed = clamp(ySpeed, -speedLimit, speedLimit)
 
 if hMoveDir != 0 or vMoveDir != 0{
     facing = point_direction(0,0, hMoveDir, vMoveDir)
+}
+
+if sign(vMoveDir){
+    
 }
 
 
@@ -74,24 +78,38 @@ y += ySpeed
     atkInst.image_angle = facing
 }*/
 if atkPress{ 
-    if !instance_exists(oAttack){
+    if !instance_exists(oAttack) and (alarm[0] < 0){
+        alarm[0] = 30
         atkInst = instance_create_depth(x,y,1,oAttack)
         
         if atkUp{
             atkInst.image_angle = 90
-            atkInst.y -= halfH
+
         }
         if atkDown{
             atkInst.image_angle = 270
-            atkInst.y += halfH
+
         }
         if atkLeft{
             atkInst.image_angle = 180
-            atkInst.x -= halfW
+
         }
         if atkRight{
             atkInst.image_angle = 0
-            atkInst.x += halfW
+
         }
     }
+}
+
+if (hMoveDir != 0) or (vMoveDir !=0){
+    if (hMoveDir > 0) sprite_index = sPlayerRightMove
+    else if (hMoveDir < 0) sprite_index = sPlayerLeftMove
+    else if (vMoveDir > 0) sprite_index = sPlayerDownMove
+    else if (vMoveDir < 0) sprite_index = sPlayerUpMove
+}
+else{
+    if (sprite_index = sPlayerRightMove) sprite_index = sPlayerRight
+    else if (sprite_index = sPlayerLeftMove) sprite_index = sPlayerLeft
+    else if (sprite_index = sPlayerDownMove) sprite_index = sPlayerDown
+    else if (sprite_index = sPlayerUpMove) sprite_index = sPlayerUp
 }

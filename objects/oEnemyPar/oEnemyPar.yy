@@ -16,10 +16,7 @@
     "name":"Enemy",
     "path":"folders/Objects/Enemy.yy",
   },
-  "parentObjectId":{
-    "name":"oEntityPar",
-    "path":"objects/oEntityPar/oEntityPar.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -36,8 +33,9 @@
   "properties":[
     {"$GMObjectProperty":"v2","%Name":"spd","filters":[],"listItems":[],"multiselect":false,"name":"spd","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"2","varType":0,},
     {"$GMObjectProperty":"v2","%Name":"life","filters":[],"listItems":[],"multiselect":false,"name":"life","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"10","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"atkDis","filters":[],"listItems":[],"multiselect":false,"name":"atkDis","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"18","varType":0,},
-    {"$GMObjectProperty":"v2","%Name":"alert_dis","filters":[],"listItems":[],"multiselect":false,"name":"alert_dis","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"160","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"atkDis","filters":[],"listItems":[],"multiselect":false,"name":"atkDis","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"15","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"alert_dis","filters":[],"listItems":[],"multiselect":false,"name":"alert_dis","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"120","varType":0,},
+    {"$GMObjectProperty":"v2","%Name":"coin","filters":[],"listItems":[],"multiselect":false,"name":"coin","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
