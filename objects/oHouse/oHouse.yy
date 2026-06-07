@@ -6,6 +6,7 @@
   "name":"oHouse",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHousePar","path":"objects/oHousePar/oHousePar.yy",},"propertyId":{"name":"buildDrop","path":"objects/oHousePar/oHousePar.yy",},"resource":{"name":"oGold","path":"objects/oGold/oGold.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"oGold",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHousePar","path":"objects/oHousePar/oHousePar.yy",},"propertyId":{"name":"life","path":"objects/oHousePar/oHousePar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"6",},
   ],
   "parent":{
     "name":"Enemy",
