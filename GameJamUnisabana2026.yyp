@@ -18,6 +18,7 @@
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Enemies","folderPath":"folders/Sprites/Enemies.yy","name":"Enemies","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Misc","folderPath":"folders/Sprites/Misc.yy","name":"Misc","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Npcs","folderPath":"folders/Sprites/Npcs.yy","name":"Npcs","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Upgrades","folderPath":"folders/Sprites/Upgrades.yy","name":"Upgrades","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -31,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"GameJamUnisabana2026",
   "resources":[
@@ -69,6 +70,7 @@
     {"id":{"name":"sBox","path":"sprites/sBox/sBox.yy",},},
     {"id":{"name":"sBush1","path":"sprites/sBush1/sBush1.yy",},},
     {"id":{"name":"sBush2","path":"sprites/sBush2/sBush2.yy",},},
+    {"id":{"name":"sButton","path":"sprites/sButton/sButton.yy",},},
     {"id":{"name":"sCampfire","path":"sprites/sCampfire/sCampfire.yy",},},
     {"id":{"name":"sCave","path":"sprites/sCave/sCave.yy",},},
     {"id":{"name":"sCoin","path":"sprites/sCoin/sCoin.yy",},},

@@ -39,7 +39,6 @@ if sign(vMoveDir){
     
 }
 
-
 //Horizontal Collisions
 if (place_meeting(x+xSpeed, y, colTiles)) {
     while(!place_meeting(x+sign(xSpeed), y, colTiles)) {
@@ -115,15 +114,4 @@ else{
 
 if hp < 0{
     instance_destroy()
-}
-
-switch (defense) {
-    case 1:
-        break
-    	
-    case 2:
-        break	
-    
-    case 3:
-        break	
 }

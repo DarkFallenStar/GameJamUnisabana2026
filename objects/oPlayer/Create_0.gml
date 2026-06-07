@@ -1,4 +1,4 @@
-colTiles = oSolid
+colTiles = [oSolid, sTree, sDeadTree, sWell, sCave]
 xSpeed = 0
 ySpeed = 0
 speedLimit = 0

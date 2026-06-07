@@ -1,1 +1,1 @@
-hp -= abs(other.damage - defense)
+hp -= clamp(other.damage - defense,0,100)
