@@ -20,7 +20,7 @@ if pause{
 
     pressKey = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter)
     
-    var move = KeyDown - keyUp
+    var move = keyUp - KeyDown
     
 
     
@@ -29,13 +29,13 @@ if pause{
     }
     
     if !instance_exists(btns[0]){
-        btns[0] = instance_create_layer(_center_x,_center_y+_cam_h/6,"Buttons",oButton);
+        btns[0] = instance_create_layer(_center_x,_center_y,"Buttons",oButton);
     }
     if !instance_exists(btns[1]){
-        btns[1] = instance_create_layer(_center_x,_center_y-_cam_h/6,"Buttons",oButton);
+        btns[1] = instance_create_layer(_center_x,_center_y-_cam_h/4,"Buttons",oButton);
     }
     if !instance_exists(btns[2]){
-        btns[2] = instance_create_layer(_center_x,_center_y-_cam_h/6,"Buttons",oButton);
+        btns[2] = instance_create_layer(_center_x,_center_y+_cam_h/4,"Buttons",oButton);
     }
     
     if move != 0{
@@ -77,6 +77,15 @@ for (var i = 0; i < array_length(btns); i++) {
                     //Resume Game
                     pause = false
                     break 
+                
+                case 2:
+                    //Unstuck Game
+                    pause = false
+                    if !instance_exists(oTransition){
+                         var trans = instance_create_layer(x,y,"Buttons",oTransition)
+                         trans.nextRoom = -2
+                    }
+                    break 
             }
         }
         else{
@@ -96,6 +105,9 @@ else{
     }
     if instance_exists(btns[0]){
         instance_destroy(btns[0])
+    }
+    if instance_exists(btns[2]){
+        instance_destroy(btns[2])
     }
     if instance_exists(oButtonSel){
         instance_destroy(oButtonSel)

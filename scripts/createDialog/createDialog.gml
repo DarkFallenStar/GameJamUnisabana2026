@@ -108,7 +108,7 @@ giveMission = [
     },
     {
         name: "Sir William (You)",
-        msg: "Tthose hoofed horrors, they'll be as extinct as last year's flapper dress",
+        msg: "Those hoofed horrors, they'll be as extinct as last year's flapper dress",
     }, {
         name: "Kingo",
         msg: "Now scram, you hero! Go on and free us from them pesky invaders.",

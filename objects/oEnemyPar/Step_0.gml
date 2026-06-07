@@ -13,9 +13,12 @@ if life > 0{
 else{
     if (alarm[0] < 0){
         instance_create_layer(x,y,"Dead",oDeadCorpse)
-        var drop = instance_create_layer(x,y,"Instances",oDrop)
+        for (var i = 0; i < coin; i++) {
+        	var drop = instance_create_layer(x,y,"Instances",oDrop)
         drop.image_xscale *= 0.5
         drop.image_yscale *= 0.5
+        }
+        
         oGUI.gobKills++
         instance_destroy()
     }

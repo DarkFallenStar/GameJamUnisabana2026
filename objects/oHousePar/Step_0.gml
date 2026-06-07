@@ -1,9 +1,9 @@
 if life > 0 and !dead{
     if life < maxhp/2{
-        image_index = 1
+        sprite_index = sHouseWorn
     }
     else{
-        image_index = 0
+        sprite_index = sHouse
     }
     
 }
@@ -15,7 +15,8 @@ else{
         //part_system_position(partSys, x, y)
         dead = true
     }
-    image_index = 2
+    mask_index = -1;
+    sprite_index = sHouseDestroyed
     image_blend = c_gray
 }
 if alarm[0] > 0{

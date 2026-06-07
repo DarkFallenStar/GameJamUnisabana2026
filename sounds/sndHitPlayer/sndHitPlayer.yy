@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"sndSelect",
+  "%Name":"sndHitPlayer",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.83591837,
+  "duration":1.6195918,
   "exportDir":"",
-  "name":"sndSelect",
+  "name":"sndHitPlayer",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"sndSelect.wav",
+  "soundFile":"sndHitPlayer.wav",
   "volume":1.0,
 }

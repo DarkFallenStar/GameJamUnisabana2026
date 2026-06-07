@@ -17,3 +17,5 @@ enum transtates {
 setTimer = false
 state = transtates.OUT
 nextRoom = noone
+
+respawn = false

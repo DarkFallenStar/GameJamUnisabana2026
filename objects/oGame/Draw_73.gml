@@ -8,6 +8,9 @@ if pause{
     draw_text_transformed(btns[1].x,btns[1].y,"Resume",
         btns[1].image_xscale/2,btns[1].image_yscale/2,0)
     
+    draw_text_transformed(btns[2].x,btns[2].y,"Unstuck",
+        btns[2].image_xscale/2,btns[2].image_yscale/2,0)
+    
     draw_set_halign(fa_left)
     draw_set_valign(fa_top)
 }    

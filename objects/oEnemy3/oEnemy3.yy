@@ -16,7 +16,8 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"atkCooldown","path":"objects/oEnemyPar/oEnemyPar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"100",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"atkDis","path":"objects/oEnemyPar/oEnemyPar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"15",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"spd","path":"objects/oEnemyPar/oEnemyPar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0.5",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"life","path":"objects/oEnemyPar/oEnemyPar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"40",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"life","path":"objects/oEnemyPar/oEnemyPar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"25",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oEnemyPar","path":"objects/oEnemyPar/oEnemyPar.yy",},"propertyId":{"name":"coin","path":"objects/oEnemyPar/oEnemyPar.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
   ],
   "parent":{
     "name":"Enemy",

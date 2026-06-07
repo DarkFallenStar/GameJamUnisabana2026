@@ -1,3 +1,3 @@
-with (all) {
-    depth = -bbox_bottom	
+with (oEnemyPar) {
+    depth = -bbox_bottom;
 }
