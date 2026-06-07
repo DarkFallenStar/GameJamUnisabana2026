@@ -12,8 +12,6 @@ guiH = display_get_gui_height()
 
 timer = 0
 
-upKey = keyboard_check_pressed(vk_up)
+moveKey = keyboard_check_pressed(vk_up)
 btnGomenu = 0
 btnResume = 0
-
-selection = [btnResume,btnGomenu]

@@ -39,6 +39,7 @@
     {"id":{"name":"MainFont","path":"fonts/MainFont/MainFont.yy",},},
     {"id":{"name":"TextFont","path":"fonts/TextFont/TextFont.yy",},},
     {"id":{"name":"oAttack","path":"objects/oAttack/oAttack.yy",},},
+    {"id":{"name":"oButton","path":"objects/oButton/oButton.yy",},},
     {"id":{"name":"oCoin","path":"objects/oCoin/oCoin.yy",},},
     {"id":{"name":"oDialog","path":"objects/oDialog/oDialog.yy",},},
     {"id":{"name":"oDropPar","path":"objects/oDropPar/oDropPar.yy",},},
