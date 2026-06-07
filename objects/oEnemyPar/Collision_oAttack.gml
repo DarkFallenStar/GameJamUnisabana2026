@@ -1,5 +1,5 @@
 if (alarm[0] < 0) and life > 0{
-    
+    audio_play_sound(sndHitEnemy,0,0,0.3,0.08,random_range(0.8,1))
     path_end()
 
     life -= other.damage

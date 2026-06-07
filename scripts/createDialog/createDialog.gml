@@ -100,6 +100,17 @@ giveMission = [
     },
 ]
 
+Congrats = [
+    {
+        name: "Kingo",
+        msg: "Cumpliste perrita, ahora toma tu dihh",
+    },
+    {   
+        name: "You",
+        msg: "Yupiiiiiiiiiiiiii",
+    }
+]
+
 maxArmor = [
     {
         name: "Armorer",

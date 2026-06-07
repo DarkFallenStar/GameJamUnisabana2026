@@ -24,7 +24,7 @@ var dy = ypos+16
 
 var hpbar = barw*(hp/maxhp)
 draw_sprite_stretched(sHealthbar, 0,dx,dy-4,barw,barh)
-draw_sprite_stretched_ext(sHealthbar, 1,dx,dy-4,hpbar,barh,c_red,0.6)
+draw_sprite_stretched_ext(sHealthbar, 1,dx,dy-4,hpbar,barh,c_red,0.8)
 
 draw_set_halign(fa_center)
 draw_set_valign(fa_middle)
@@ -47,7 +47,7 @@ draw_sprite_ext(sCoin,0,boxw/3-hgapCoin,dy+vmargin,1,1,0,c_white,1)
 draw_text_transformed(boxw/3+hgapCoin,dy+vmargin,$"{money}",global.statSize,global.statSize,0)
 
 draw_sprite_ext(sDeadGoblin,0,boxw/2-hgap,dy+vmargin,itemSize,itemSize,0,c_white,1)
-draw_text_transformed(boxw/2+hgap,dy+vmargin,$"{currentGobCount}/{totalGobCount}",global.statSize,global.statSize,0) 
+draw_text_transformed(boxw/2+hgap,dy+vmargin,$"{gobKills}/{totalGobCount}",global.statSize,global.statSize,0) 
 
 draw_sprite_ext(sGold,0,boxw/1.5-hgap,dy+vmargin,1.5,1.5,0,c_white,1)
 draw_text_transformed(boxw/1.5+hgap,dy+vmargin,$"{gold}/{totalGoldCount}",global.statSize,global.statSize,0)

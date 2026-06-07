@@ -2,3 +2,4 @@
 event_inherited();
 
 talked = false
+missionComplete = false

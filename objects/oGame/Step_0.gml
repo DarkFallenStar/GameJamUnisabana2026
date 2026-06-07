@@ -34,6 +34,9 @@ if pause{
     if !instance_exists(btns[1]){
         btns[1] = instance_create_layer(_center_x,_center_y-_cam_h/6,"Buttons",oButton);
     }
+    if !instance_exists(btns[2]){
+        btns[2] = instance_create_layer(_center_x,_center_y-_cam_h/6,"Buttons",oButton);
+    }
     
     if move != 0{
     index += move
@@ -61,7 +64,10 @@ for (var i = 0; i < array_length(btns); i++) {
             switch (index) {   
                 case 0:
                     //Return Menu
-                    game_end()
+                    
+                    var trans = instance_create_layer(x,y,"Buttons",oTransition)
+                    trans.nextRoom = MainMenu
+                    
                     break 
                 
                 case 1:
@@ -93,10 +99,4 @@ else{
     }
     instance_deactivate_layer("Buttons")
     instance_activate_all()
-}
-
-if keyboard_check(ord("H")){
-if !instance_exists(oTransition){
-        instance_create_layer(x,y,"Instances",oTransition)
-    }
 }

@@ -16,6 +16,7 @@ else{
         var drop = instance_create_layer(x,y,"Instances",oDrop)
         drop.image_xscale *= 0.5
         drop.image_yscale *= 0.5
+        oGUI.gobKills++
         instance_destroy()
     }
 }

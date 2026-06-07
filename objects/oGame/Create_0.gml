@@ -17,5 +17,5 @@ pressKey = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter)
 
 obtnSel = 0
 
-btns = [noone, noone]
+btns = [noone, noone, noone]
 index = 1

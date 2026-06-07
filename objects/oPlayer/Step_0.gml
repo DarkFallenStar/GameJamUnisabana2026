@@ -86,6 +86,7 @@ if atkPress{
         alarm[0] = 30
         atkInst = instance_create_layer(x,y,"Player",oAttack)
         atkInst.damage += attack
+        audio_play_sound(sndSlash,0,0,0.7,0,random_range(0.8,1.2))
         
         if atkUp{
            atkInst.image_angle = 90
