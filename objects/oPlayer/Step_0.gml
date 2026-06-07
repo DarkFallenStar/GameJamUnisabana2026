@@ -1,3 +1,5 @@
+if instance_exists(oDialog) exit
+
 //Inputs
 keyLeft = keyboard_check(ord("A"))
 keyRight = keyboard_check(ord("D"))
@@ -83,20 +85,16 @@ if atkPress{
         atkInst = instance_create_depth(x,y,1,oAttack)
         
         if atkUp{
-            atkInst.image_angle = 90
-
+           atkInst.image_angle = 90
         }
         if atkDown{
             atkInst.image_angle = 270
-
         }
         if atkLeft{
             atkInst.image_angle = 180
-
         }
         if atkRight{
             atkInst.image_angle = 0
-
         }
     }
 }
@@ -112,4 +110,19 @@ else{
     else if (sprite_index = sPlayerLeftMove) sprite_index = sPlayerLeft
     else if (sprite_index = sPlayerDownMove) sprite_index = sPlayerDown
     else if (sprite_index = sPlayerUpMove) sprite_index = sPlayerUp
+}
+
+if hp < 0{
+    instance_destroy()
+}
+
+switch (defense) {
+    case 1:
+        break
+    	
+    case 2:
+        break	
+    
+    case 3:
+        break	
 }

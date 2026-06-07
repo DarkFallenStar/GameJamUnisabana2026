@@ -1,0 +1,1 @@
+hp -= abs(other.damage - defense)

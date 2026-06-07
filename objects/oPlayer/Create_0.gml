@@ -8,5 +8,10 @@ hMoveDir = 0
 vMoveDir = 0
 deaccel = 0.4
 facing = 0
-maxhp = 20
+
 hp = 20
+maxhp = hp
+
+defense = 0
+armor = ["Plata","Oro","Espinela"]
+initDialogs()

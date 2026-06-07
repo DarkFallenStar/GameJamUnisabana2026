@@ -13,3 +13,5 @@ enum states{
     DEAD,
 }
 state = states.IDLE
+
+canAttack = true

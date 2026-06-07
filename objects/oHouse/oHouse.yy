@@ -4,7 +4,9 @@
   "eventList":[],
   "managed":true,
   "name":"oHouse",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"oHousePar","path":"objects/oHousePar/oHousePar.yy",},"propertyId":{"name":"buildDrop","path":"objects/oHousePar/oHousePar.yy",},"resource":{"name":"oGold","path":"objects/oGold/oGold.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"oGold",},
+  ],
   "parent":{
     "name":"Enemy",
     "path":"folders/Objects/Enemy.yy",
