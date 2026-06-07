@@ -1,1 +1,2 @@
 dead = false
+maxhp = life

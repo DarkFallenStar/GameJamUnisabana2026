@@ -1,5 +1,5 @@
 if life > 0 and !dead{
-    if life < life/2{
+    if life < maxhp/2{
         image_index = 1
     }
     else{
