@@ -14,4 +14,4 @@ maxhp = hp
 
 defense = 0
 armor = ["Plata","Oro","Espinela"]
-initDialogs()
+updateDialogs()
