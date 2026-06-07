@@ -1,4 +1,8 @@
 timer++
+
+if !audio_is_playing(sndMenu){
+    audio_play_sound(sndMenu,0,1,0.65)
+}
     
 draw_set_font(TextFont)
 
@@ -26,6 +30,7 @@ if !instance_exists(oButtonSel){
     obtnSel.image_yscale = 4
     
     if move != 0{
+        audio_play_sound(sndMoveMenu,0,0,1,0.1)
     index += move
     
     var size = array_length(btns)
@@ -47,6 +52,7 @@ for (var i = 0; i < array_length(btns); i++) {
         btnSel.y += sin(timer*0.08)*0.2
     
         if pressKey{
+            audio_play_sound(sndSelect,0,0)
             btns[index].image_blend = c_gray
             switch (index) {   
                 case 0:
@@ -56,8 +62,10 @@ for (var i = 0; i < array_length(btns); i++) {
                 
                 case 1:
                     //StartGame
-                    trans = instance_create_layer(x,y,"Instances",oTransition)
-                    trans.nextRoom = MainGame
+                    if !instance_exists(oTransition){
+                        trans = instance_create_layer(x,y,"Instances",oTransition)
+                        trans.nextRoom = MainGame
+                    }
                     break 
             }
         }

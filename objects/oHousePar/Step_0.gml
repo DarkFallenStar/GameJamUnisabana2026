@@ -1,5 +1,11 @@
 if life > 0 and !dead{
-    image_index = 0
+    if life < life/2{
+        image_index = 1
+    }
+    else{
+        image_index = 0
+    }
+    
 }
 else{
     if !dead{
@@ -9,7 +15,7 @@ else{
         //part_system_position(partSys, x, y)
         dead = true
     }
-    image_index = 1
+    image_index = 2
     image_blend = c_gray
 }
 if alarm[0] > 0{

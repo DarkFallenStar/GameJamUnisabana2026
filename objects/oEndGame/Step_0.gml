@@ -25,14 +25,15 @@ if !instance_exists(oButtonSel){
     obtnSel.image_xscale = 4
     obtnSel.image_yscale = 4
     
-    if move != 0{
-    index += move
-    
-    var size = array_length(btns)
-    
-    if index < 0 { index = size - 1}
-    else if index >= size {index = 0}
-}
+    if move != 0{ 
+        audio_play_sound(sndMoveMenu,0,0,1,0.1)
+        index += move
+        
+        var size = array_length(btns)
+        
+        if index < 0 { index = size - 1}
+        else if index >= size {index = 0}
+    }
 
 for (var i = 0; i < array_length(btns); i++) {
     
@@ -47,6 +48,7 @@ for (var i = 0; i < array_length(btns); i++) {
         btnSel.y += sin(timer*0.08)*0.2
     
         if pressKey{
+            audio_play_sound(sndSelect,0,0)
             btns[index].image_blend = c_gray
             switch (index) {   
                 case 0:

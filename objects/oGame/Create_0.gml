@@ -19,3 +19,5 @@ obtnSel = 0
 
 btns = [noone, noone, noone]
 index = 1
+
+audio_stop_all()
