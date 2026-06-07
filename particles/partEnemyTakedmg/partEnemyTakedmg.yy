@@ -13,8 +13,8 @@
   ],
   "name":"partEnemyTakedmg",
   "parent":{
-    "name":"GameJamUnisabana2026",
-    "path":"GameJamUnisabana2026.yyp",
+    "name":"Particles",
+    "path":"folders/Particles.yy",
   },
   "resourceType":"GMParticleSystem",
   "resourceVersion":"2.0",

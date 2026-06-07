@@ -7,3 +7,4 @@ var h = ceil(room_height/TS)
 global.mpGrid = mp_grid_create(0,0,w,h,TS,TS)
 
 mp_grid_add_instances(global.mpGrid, oSolid, false)
+mp_grid_add_instances(global.mpGrid, oHouse, false)

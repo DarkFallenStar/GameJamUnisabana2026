@@ -13,5 +13,9 @@ guiH = display_get_gui_height()
 timer = 0
 
 moveKey = keyboard_check_pressed(vk_up)
-btnGomenu = 0
-btnResume = 0
+pressKey = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_enter)
+
+obtnSel = 0
+
+btns = [noone, noone]
+index = 1

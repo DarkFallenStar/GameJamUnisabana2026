@@ -1,18 +1,21 @@
 if instance_exists(oDialog) exit
 
 //Inputs
-keyLeft = keyboard_check(ord("A"))
-keyRight = keyboard_check(ord("D"))
-keyDown = keyboard_check(ord("S"))
-keyUp = keyboard_check(ord("W"))
-atkUp = keyboard_check_pressed(vk_up)
-atkDown = keyboard_check_pressed(vk_down)
-atkLeft = keyboard_check_pressed(vk_left)
-atkRight = keyboard_check_pressed(vk_right)
-atkPress = keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down) 
-    or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)
-clickPress = mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_space)
-keySprint = keyboard_check(vk_shift)
+if !dead{
+    keyLeft = keyboard_check(ord("A"))
+    keyRight = keyboard_check(ord("D"))
+    keyDown = keyboard_check(ord("S"))
+    keyUp = keyboard_check(ord("W"))
+    atkUp = keyboard_check_pressed(vk_up)
+    atkDown = keyboard_check_pressed(vk_down)
+    atkLeft = keyboard_check_pressed(vk_left)
+    atkRight = keyboard_check_pressed(vk_right)
+    atkPress = keyboard_check_pressed(vk_up) or keyboard_check_pressed(vk_down) 
+        or keyboard_check_pressed(vk_left) or keyboard_check_pressed(vk_right)
+    clickPress = mouse_check_button_pressed(mb_left) or keyboard_check_pressed(vk_space)
+    keySprint = keyboard_check(vk_shift)
+}
+
 
 //Movement calc
 if keySprint{
@@ -81,7 +84,7 @@ y += ySpeed
 if atkPress{ 
     if !instance_exists(oAttack) and (alarm[0] < 0){
         alarm[0] = 30
-        atkInst = instance_create_depth(x,y,1,oAttack)
+        atkInst = instance_create_layer(x,y,"Player",oAttack)
         atkInst.damage += attack
         
         if atkUp{
@@ -112,6 +115,15 @@ else{
     else if (sprite_index = sPlayerUpMove) sprite_index = sPlayerUp
 }
 
-if hp < 0{
-    instance_destroy()
+if hp <= 0{
+    sprite_index = sPlayerDead
+    xSpeed = 0
+    ySpeed = 0
+    hMoveDir = 0
+    vMoveDir = 0
+    
+    if !dead{
+        alarm[2] = 20
+        dead = true
+    }
 }

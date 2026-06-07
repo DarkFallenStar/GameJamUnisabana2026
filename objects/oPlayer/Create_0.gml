@@ -1,4 +1,4 @@
-colTiles = [oSolid, sTree, sDeadTree, sWell, sCave]
+colTiles = [oSolid, oHouse]
 xSpeed = 0
 ySpeed = 0
 speedLimit = 0
@@ -15,6 +15,10 @@ maxhp = hp
 defense = 0
 attack = 0
 
+canTakeDamage = true
+
 tier = ["Silver","Gold","Spinel","You should not be able to see this"]
 
 updateDialogs()
+
+dead = false

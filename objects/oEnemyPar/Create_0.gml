@@ -4,7 +4,7 @@ pathDelay = 30
 pathTimer = irandom(60)
 kbx = 0
 kby = 0
-colTiles = oSolid
+colTiles = [oSolid, oHouse]
 
 enum states{
     IDLE,

@@ -36,8 +36,8 @@ function checkPlayer(){
             }
             if (image_index >= attackFrame and canAttack){
                 var dir = point_direction(x,y,oPlayer.x,oPlayer.y)
-                var xx = x+lengthdir_x(atkDis,dir)
-                var yy = y+lengthdir_y(atkDis,dir)
+                var xx = x+lengthdir_x(atkDis+20,dir)
+                var yy = y+lengthdir_y(atkDis+20,dir)
                 var enemyHit = instance_create_layer(xx,yy,"Instances",oEnemyhitbox)
                 
                 enemyHit.damage = damage
@@ -45,8 +45,11 @@ function checkPlayer(){
                 
                 alarm[2] = atkCooldown
                 
-                oPlayer.image_blend = c_red
-                oPlayer.alarm[1] = 30
+                if oPlayer.alarm[1] < 0{
+                    oPlayer.alarm[1] = 30
+                    canTakeDamage = false
+                    oPlayer.image_blend = c_red
+                }
             }
         }
     }
