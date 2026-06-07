@@ -6,8 +6,6 @@ var boxw = guiW
 var boxh = guiH - ypos
 
 draw_set_font(TextFont)
-draw_set_halign(fa_center)
-draw_set_valign(fa_middle)
 
 var hp = oPlayer.hp
 var maxhp = oPlayer.maxhp
@@ -30,3 +28,4 @@ draw_sprite_stretched_ext(sHealthbar, 1,dx,dy,hpbar,barh,c_red,0.6)
 draw_text_transformed(dx+barw/2,dy+barh/2,$"{hp}/{maxhp}",global.statSize,global.statSize,0)
 
 draw_sprite(sArmorIcon,oPlayer.defense,dx,dy+10)
+draw_sprite(sSwordIcon,oPlayer.attack,dx,dy+40)

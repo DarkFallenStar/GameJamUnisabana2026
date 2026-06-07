@@ -1,5 +1,4 @@
-money = 0
+money = 40
 
 guiW = display_get_gui_width()
 guiH = display_get_gui_height()
-

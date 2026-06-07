@@ -14,7 +14,8 @@ charColor = {
     "You": c_white,
     "Shoppa": c_purple,
     "Kingo": c_gray,
-    "Armorer": c_red
+    "Armorer": c_red,
+    "Sworder": c_blue
 }
 
 buyLife = [
@@ -25,6 +26,17 @@ buyLife = [
     {   
         name: "You",
         msg: "Que rico",
+    }
+]
+
+fullHp = [
+    {
+        name: "Shoppa",
+        msg: "Tiene la vida maxima hermano, no le voy a dejar derrochar plata",
+    },
+    {   
+        name: "You",
+        msg: "Repanpanos",
     }
 ]
 
@@ -88,9 +100,29 @@ giveMission = [
     },
 ]
 
+maxArmor = [
+    {
+        name: "Armorer",
+        msg: $"Ya no te puedo mejorar mas la armadura",
+    },
+    {   
+        name: "You",
+        msg: "U son of a bitcch",
+    },
+]
+
+maxSword = [
+    {
+        name: "Sworder",
+        msg: $"Ya no te puedo mejorar mas la espada",
+    },
+    {   
+        name: "You",
+        msg: "U son of a bitcch",
+    },
+]
+
 function updateDialogs(){ 
-
-
 
 global.noMoneyArmor = [
     {
@@ -106,7 +138,29 @@ global.noMoneyArmor = [
 global.upgradeArmor = [
     {
         name: "Armorer",
-        msg: $"Listo, ahi tiene su armadura de {oPlayer.armor[oPlayer.defense]}",
+        msg: $"Listo, ahi tiene su armadura de {oPlayer.tier[oPlayer.defense]}",
+    },
+    {   
+        name: "You",
+        msg: "vamos",
+    },
+]
+    
+global.noMoneySword = [
+    {
+        name: "Sworder",
+        msg: $"Dame {(oPlayer.attack+1)*5} y  ahi si hablamos",
+    },
+    {   
+        name: "You",
+        msg: "mierda",
+    },
+]
+    
+global.upgradeSword = [
+    {
+        name: "Sworder",
+        msg: $"Listo, ahi tiene su espada de {oPlayer.tier[oPlayer.attack]}",
     },
     {   
         name: "You",

@@ -83,6 +83,7 @@ if atkPress{
     if !instance_exists(oAttack) and (alarm[0] < 0){
         alarm[0] = 30
         atkInst = instance_create_depth(x,y,1,oAttack)
+        atkInst.damage += attack
         
         if atkUp{
            atkInst.image_angle = 90

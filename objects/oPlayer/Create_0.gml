@@ -13,5 +13,8 @@ hp = 20
 maxhp = hp
 
 defense = 0
-armor = ["Plata","Oro","Espinela"]
+attack = 0
+
+tier = ["Silver","Gold","Spinel","You should not be able to see this"]
+
 updateDialogs()
