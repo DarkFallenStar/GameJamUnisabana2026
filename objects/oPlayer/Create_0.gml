@@ -22,3 +22,4 @@ tier = ["Silver","Gold","Spinel","You should not be able to see this"]
 updateDialogs()
 
 dead = false
+playonce = true

@@ -3,5 +3,4 @@ if !instance_exists(oTransition){
     trans.nextRoom = -1 
 }
 
-
 dead = false

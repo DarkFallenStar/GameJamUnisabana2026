@@ -1,4 +1,4 @@
-money = 0
+money = 5
 gold = 0
 gobKills = 0
 

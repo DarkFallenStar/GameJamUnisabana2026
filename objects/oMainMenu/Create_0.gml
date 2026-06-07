@@ -11,6 +11,7 @@ obtnSel = 0
 
 btn1 = 0
 btn2 = 0
+audio_stop_all()
 
 btns = [btn1, btn2]
 index = 1

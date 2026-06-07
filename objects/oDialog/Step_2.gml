@@ -11,9 +11,15 @@ else if keyboard_check_pressed(inputKey){
     currentMsg++
     if currentMsg >= array_length(message){
         instance_destroy()
-        if oKing.missionComplete{
-            trans = instance_create_layer(x,y,"Instances",oTransition)
+        if room == MainGame{
+            if oKing.missionComplete{
+            var trans = instance_create_layer(x,y,"Instances",oTransition)
             trans.nextRoom = EndGame
+        }
+        }
+        else if room == EndGame{ 
+                var trans = instance_create_layer(x,y,"Instances",oTransition)
+            trans.nextRoom = FinalRoom
         }
     }
     else{

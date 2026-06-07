@@ -1,4 +1,7 @@
-timer++
+if !audio_is_playing(sndEndgamebgm){
+    audio_play_sound(sndEndgamebgm,0,1,0.8)
+}
+/*timer++
     
 draw_set_font(TextFont)
 

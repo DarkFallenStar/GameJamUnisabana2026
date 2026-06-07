@@ -125,6 +125,11 @@ if hp <= 0{
     
     if !dead{
         alarm[2] = 20
+        
         dead = true
+    }
+    if playonce{ 
+        audio_play_sound(sndPlayerDead,0,0,0.8,0.3)
+        playonce = false
     }
 }

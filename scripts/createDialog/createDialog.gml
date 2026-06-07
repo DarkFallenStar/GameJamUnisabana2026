@@ -15,7 +15,8 @@ charColor = {
     "Shoppa": c_purple,
     "Kingo": c_red,
     "Armorer": c_blue,
-    "Sworder": c_blue
+    "Sworder": c_blue,
+    "Evil Demon": c_maroon
 }
 
 buyLife = [
@@ -145,6 +146,25 @@ maxSword = [
     {   
         name: "Sir William (You)",
         msg: "Unlucky me",
+    },
+]
+
+devil = [
+    {
+        name: "Evil Demon",
+        msg: $"Thou hast served us well, far better than any demon could.",
+    },
+    {   
+        name: "Evil Demon",
+        msg: "The goblins threatened the crown, and so thy king pointed thee toward them like a hound to the hunt.",
+    },
+    {   
+        name: "Evil Demon",
+        msg: "The goblins were never the threat. Blind faith was.",
+    },
+    {   
+        name: "Evil Demon",
+        msg: "Now behold thy kingdom crumbling into ruin.",
     },
 ]
 

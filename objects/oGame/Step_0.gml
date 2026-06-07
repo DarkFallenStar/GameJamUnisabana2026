@@ -68,7 +68,8 @@ for (var i = 0; i < array_length(btns); i++) {
                     //Return Menu
                     if !instance_exists(oTransition){
                          var trans = instance_create_layer(x,y,"Buttons",oTransition)
-                         trans.nextRoom = MainMenu                        
+                         trans.nextRoom = MainMenu   
+                        audio_stop_all()                     
                     }
 
                     break 
@@ -114,4 +115,7 @@ else{
     }
     instance_deactivate_layer("Buttons")
     instance_activate_all()
+}
+if !audio_is_playing(sndGamebgm){
+    audio_play_sound(sndGamebgm,0,0,0.35)
 }

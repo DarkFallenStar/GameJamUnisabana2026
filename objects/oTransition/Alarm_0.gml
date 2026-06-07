@@ -9,7 +9,8 @@ else if nextRoom == -1 {
     oPlayer.y = oPlayer.ystart
     oPlayer.hp = oPlayer.maxhp
     if (alarm[3] < 0){
-        oGUI.money /=2
+        oPlayer.playonce = true
+        oGUI.money = floor(oGUI.money/2)
         alarm[3] = 60
     }
 
@@ -18,6 +19,7 @@ else if nextRoom == -2 {
     
     oPlayer.x = oPlayer.xstart
     oPlayer.y = oPlayer.ystart
+
     
 }
 else
